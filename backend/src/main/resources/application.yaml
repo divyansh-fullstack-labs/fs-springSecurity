@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: springSecurityApplication
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/security-app?useSSL=false
+    username: root
+    password: admin
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql : true
+
+  devtools:
+    restart:
+      enabled: true
+      exclude: com/divyansh/fullstacklabs/springSecurityApplication/dto/**
+
+  security:
+    user:
+      name: div
+      password: admin
+
+
+
