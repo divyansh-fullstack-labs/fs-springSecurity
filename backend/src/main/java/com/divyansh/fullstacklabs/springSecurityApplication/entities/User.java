@@ -3,6 +3,7 @@ package com.divyansh.fullstacklabs.springSecurityApplication.entities;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.jspecify.annotations.Nullable;
 import org.springframework.security.core.GrantedAuthority;
@@ -15,6 +16,7 @@ import java.util.List;
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 public class User implements UserDetails {
 
     @Id
@@ -24,6 +26,7 @@ public class User implements UserDetails {
     @Column(unique = true)
     private String email;
     private String password;
+    private String name;
 
 
     @Override
