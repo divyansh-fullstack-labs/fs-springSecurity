@@ -20,10 +20,7 @@ spring:
       enabled: true
       exclude: com/divyansh/fullstacklabs/springSecurityApplication/dto/**
 
-  security:
-    user:
-      name: div
-      password: admin
-
+jwt:
+  secretKey : qasdzxcwqaasdfjujiefiabdvcdsbfbvjhwdsbfdfhuiwehiufhaidhaisdjhqow
 
 
